@@ -20,10 +20,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#QuienesSomos">Characters</a>
-                <a class="nav-link" href="#Destacados">New</a>
-                <a class="nav-link" href="#Contacto">Contact</a>
+              <li class="nav-item">
+                <%= link_to "Home", root_path, :class=>"nav-link active", "aria-current"=>"page" %>
+              </li>
+              <li class="nav-item">  
+                <%= link_to "Characters", characters_path, :class=>"nav-link" %>
+              </li>
+              <li class="nav-item">  
+                <%= link_to "New character", new_character_path, :class=>"nav-link" %>
+              </li>               
             </div>
           </div>          
         </div>
@@ -38,7 +43,9 @@
         </div>
       </div>
     </div>
-      
+    <%= javascript_include_tag "breakpoints.min" %>
+    <%= javascript_include_tag "browser.min" %>
+    <%= javascript_include_tag "jquery.min" %>    
   </body>
   
 </html>
