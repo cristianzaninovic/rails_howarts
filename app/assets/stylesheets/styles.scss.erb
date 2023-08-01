@@ -1,0 +1,15 @@
+@font-face {
+    font-family: harryPotter;
+    src: url('<%=asset_path('HarryPotter-ov4z.ttf')%>');
+}
+
+header {
+  height: 80px;
+  background-color: gold;
+  font-family: harryPotter;
+}
+#intro {
+  padding-bottom: 52.6%; /* = ( 1010 / 1920 ) x 100 */
+  background-image: url( '<%= image_path("Hogwarts-Featured.jpg")%>' );
+  background-size: cover;
+}
